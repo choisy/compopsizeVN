@@ -1,0 +1,9 @@
+Package: compopsizeVN
+Type: Package
+Title: Shape files of the communes of Vietnam with populations sizes
+Version: 0.1.0
+Author: Marc Choisy
+Maintainer: Marc Choisy <marc.choisy@ird.fr>
+Description: Contains the polygons of the communes of Vietnam together with communes population sizes as attribute
+License: MIT
+LazyData: TRUE
