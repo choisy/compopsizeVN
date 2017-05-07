@@ -7,9 +7,9 @@ names(communes@data) <- c("commune_id", "district_id", "commune_vn", "commune",
                           "district_vn", "district", "province_vn", "province",
                           "province_id", "population", "area", "shape_length",
                           "shape_area")
-communes@data <- communes@data[, c("province_id", "district_id", "commune_id",
-                                   "province", "district", "commune",
-                                   "province_vn", "district_vn", "commune_vn",
+communes@data <- communes@data[, c("commune_id", "district_id", "province_id",
+                                   "commune", "district", "province",
+                                   "commune_vn", "district_vn", "province_vn",
                                    "population", "area", "shape_length", "shape_area")]
 rownames(communes@data) <- NULL
 devtools::use_data(communes, overwrite = TRUE)
