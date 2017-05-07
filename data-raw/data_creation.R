@@ -12,4 +12,8 @@ communes@data <- communes@data[, c("commune_id", "district_id", "province_id",
                                    "commune_vn", "district_vn", "province_vn",
                                    "population", "area", "shape_length", "shape_area")]
 rownames(communes@data) <- NULL
+for(i in seq_along(communes@polygons))
+  communes@polygons[[i]]@ID <- as.character(as.numeric(communes@polygons[[i]]@ID) + 1)
+
+
 devtools::use_data(communes, overwrite = TRUE)
